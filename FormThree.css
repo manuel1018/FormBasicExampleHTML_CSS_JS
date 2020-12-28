@@ -1,0 +1,137 @@
+:root {
+    --success-color: green;
+    --error-color: red;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: rgba(235, 83, 13, 0.8);
+}
+
+.container {
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    width: 300px;
+    height: 600px;
+}
+
+.container h1,
+h2,
+h3,
+h4,
+h5,
+p {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.container p {
+    font-size: 14px;
+}
+
+.form-control {
+    padding: 10px;
+    position: relative;
+    margin-bottom: 5px;
+}
+
+.form-control small {
+    display: block;
+    position: absolute;
+    color: var(--error-color);
+    visibility: hidden;
+}
+
+.form-control.error small {
+    visibility: visible;
+}
+
+.form-control.sucess small {
+    visibility: hidden;
+}
+
+.form-control input {
+    border: 2px solid rgb(236, 152, 5);
+    padding: 8px;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 16px;
+}
+
+.form-control.success input {
+    border-color: var(--success-color);
+}
+
+.form-control.error input {
+    border-color: var(--error-color);
+}
+
+.form-control input:focus {
+    border-color: rgb(227, 243, 5);
+    outline: 0;
+}
+
+.container button {
+    display: block;
+    cursor: pointer;
+    width: 93%;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    padding: 10px;
+    font-weight: bold;
+    color: black;
+    border-color: orange;
+    background-color: orange;
+    text-align: center;
+}
+
+.container button:focus {
+    border-color: rgba(235, 83, 13, 0.8);
+    background: rgba(235, 83, 13, 0.8);
+    color: white;
+    outline: none;
+}
+
+.form h1 {
+    color: orange
+}
+
+.container h4 {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.container h4 a {
+    color: red;
+    cursor: pointer;
+}
+
+.container h5 {
+    margin-bottom: 20px;
+    font-style: oblique;
+}
+
+.icons-social {
+    display: flex;
+    margin-top: 0;
+    margin-right: auto;
+    margin-left: auto;
+    width: 80%;
+    justify-content: space-around;
+}
